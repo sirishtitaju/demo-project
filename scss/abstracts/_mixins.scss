@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin avatar-img {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

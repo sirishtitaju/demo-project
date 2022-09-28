@@ -1,0 +1,114 @@
+@import '../abstracts/variables';
+@import '../components/card';
+@import '../components/tab';
+
+$fa-font-path:"../../node_modules/font-awesome/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+
+main {
+  @extend .card;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 2.1rem;
+
+  h1 {
+    padding-right: 6rem;
+  }
+
+  .research-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    .timeline-list {
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+      gap: .5rem;
+
+      .timeline-item {
+        color: $txt-secondary;
+      }
+
+      .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $dot-bg;
+      }
+
+    }
+
+    .topics {
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+
+      .topics-list {
+        @extend .timeline-list;
+        gap: 1.6rem;
+
+        .item-link {
+          font-size: 1.4rem;
+          border: 3px solid $light-grey;
+          padding: .6rem 1.2rem;
+          border-radius: .8rem;
+        }
+      }
+    }
+
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  .accordionWrapper {
+    h5 {
+      margin-bottom: 1.2rem;
+    }
+
+    .accordion-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1.6rem;
+
+      .accordion-header {
+        border: 1px solid $grey;
+        border-radius: 8px;
+        padding: 1.6rem;
+
+        h3 {
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    padding: 0;
+    border: none;
+
+    button {
+      font-weight: 600;
+    }
+  }
+
+  button {
+    display: inline;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    .icon-chevor {
+      @extend .fa;
+      @extend .fa-chevron-down;
+    }
+
+  }
+}

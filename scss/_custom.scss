@@ -1,0 +1,64 @@
+$dark:#424246;
+$navbar-dark-color:$dark;
+//Bootstrap 5
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+//Bootstrap 5 Component Overrides
+html,
+body {
+  min-width: 250px;
+  // overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+}
+
+.accordion {
+  width: 100%;
+
+  .accordion-item {
+    border: none;
+
+    .accordion-collapse {
+      padding-left: 1.6rem;
+    }
+
+    .accordion-button {
+      padding: 0;
+    }
+
+    .accordion-body,
+    button,
+    .btn {
+      font-size: 1.4rem;
+      padding-left: 0;
+      padding-bottom: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: $black;
+  background-color: transparent;
+  box-shadow: none;
+}

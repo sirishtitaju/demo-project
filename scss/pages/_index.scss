@@ -1,0 +1,20 @@
+@import '../abstracts/variables';
+
+.section-navigation,
+.section-main {
+  padding: .5rem 2rem;
+}
+
+section {
+  background-color: $grey;
+}
+
+hr {
+  border: 1px solid $grey;
+  width: 95%;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}

@@ -1,0 +1,28 @@
+@use './custom';
+@use './pages/index';
+@use './layout/main';
+@use './layout/sidebar-left';
+@use './layout/navigation';
+@use './components/card';
+@use './components/buttons';
+@use './components/pills';
+@use './abstracts/utility';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  list-style: none;
+}

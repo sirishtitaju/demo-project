@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+@import '../components/buttons';
+@import '../abstracts/mixins';
+
+.nav-pills {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  width: 100%;
+  @extend .button-secondary;
+  padding: 0;
+
+  li {
+    flex: 1 1 25%;
+    @include flex-center;
+    padding: .8rem 1.6rem;
+
+    &.active {
+      background-color: $black;
+      border-radius: 8px;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &:first-child {
+      border-radius: 0 8px 8px 0;
+    }
+
+    &:last-child {
+      border-radius: 8px 0px 0px 8px;
+    }
+  }
+}

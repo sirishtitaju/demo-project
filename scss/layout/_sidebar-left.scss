@@ -1,0 +1,7 @@
+@import '../abstracts/mixins';
+
+.sidebar-left {
+  @include flex-center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
