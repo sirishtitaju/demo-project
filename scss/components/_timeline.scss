@@ -1,0 +1,30 @@
+ @import '../abstracts/variables';
+
+ .timeline-list {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-left: 0;
+   gap: .5rem;
+
+
+
+   .dot {
+     width: 4px;
+     height: 4px;
+     border-radius: 50%;
+     background-color: $dot-bg;
+   }
+ }
+
+ .timeline-item {
+   color: $txt-secondary;
+ }
+
+ .details-list {
+   @extend .timeline-list;
+ }
+
+ .detail-item {
+   @extend .timeline-item;
+ }

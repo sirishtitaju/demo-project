@@ -1,6 +1,7 @@
 @import '../abstracts/variables';
 @import '../components/card';
 @import '../components/tab';
+@import '../components/timeline';
 
 $fa-font-path:"../../node_modules/font-awesome/fonts";
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
@@ -20,25 +21,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-
-    .timeline-list {
-      display: flex;
-      align-items: center;
-      padding-left: 0;
-      gap: .5rem;
-
-      .timeline-item {
-        color: $txt-secondary;
-      }
-
-      .dot {
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: $dot-bg;
-      }
-
-    }
 
     .topics {
       display: flex;

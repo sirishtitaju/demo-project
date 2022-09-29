@@ -2,10 +2,12 @@
 @use './pages/index';
 @use './layout/main';
 @use './layout/sidebar-left';
+@use './layout/sidebar-right';
 @use './layout/navigation';
 @use './components/card';
 @use './components/buttons';
 @use './components/pills';
+@use './components/timeline';
 @use './abstracts/utility';
 
 

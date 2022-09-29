@@ -13824,6 +13824,7 @@ h2, .h2 {
 
 h5, .h5 {
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 button {
@@ -13878,7 +13879,7 @@ a {
   color: #000000;
 }
 
-.card, main, .pstat-card {
+.card, main, .recom-card, .pstat-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13965,10 +13966,34 @@ a {
   font-weight: normal;
 }
 
+.recom-card {
+  gap: 1.6rem;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .tab-body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+.timeline-list, main .research-top .topics .topics-list, .details-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 0.5rem;
+}
+.timeline-list .dot, main .research-top .topics .topics-list .dot, .details-list .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+
+.timeline-item, .detail-item {
+  color: #828282;
 }
 
 /*!
@@ -17025,21 +17050,6 @@ main .research-top {
   flex-direction: column;
   gap: 1.6rem;
 }
-main .research-top .timeline-list, main .research-top .topics .topics-list {
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-  gap: 0.5rem;
-}
-main .research-top .timeline-list .timeline-item, main .research-top .topics .topics-list .timeline-item {
-  color: #828282;
-}
-main .research-top .timeline-list .dot, main .research-top .topics .topics-list .dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #C4C4C4;
-}
 main .research-top .topics {
   display: flex;
   flex-direction: column;
@@ -17098,6 +17108,23 @@ main button {
   gap: 1.6rem;
 }
 
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details-wrapper {
+  display: flex;
+  width: 100%;
+}
+.details-wrapper .details-list li {
+  font-size: 1.4rem;
+}
+.details-wrapper .details-list:last-child {
+  margin-left: auto;
+}
+
 .navbar {
   padding: 1rem 4.6rem;
 }
@@ -17110,7 +17137,7 @@ main button {
   font-size: 1.6rem;
 }
 
-.card, .pstat-card {
+.card, .recom-card, .pstat-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17197,6 +17224,12 @@ main button {
   font-weight: normal;
 }
 
+.recom-card {
+  gap: 1.6rem;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .button-primary, .button-secondary {
   padding: 0.8rem 1.6rem;
   background-color: #000000;
@@ -17250,6 +17283,24 @@ main button {
 }
 .nav-pills li:last-child {
   border-radius: 8px 0px 0px 8px;
+}
+
+.timeline-list, .details-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  gap: 0.5rem;
+}
+.timeline-list .dot, .details-list .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+
+.timeline-item, .detail-item {
+  color: #828282;
 }
 
 .font-weight-normal {
