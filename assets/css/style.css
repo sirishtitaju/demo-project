@@ -17099,6 +17099,17 @@ main button {
   background-color: transparent;
   padding: 0;
 }
+main .details-wrapper {
+  display: flex;
+  width: 100%;
+}
+main .details-wrapper .details-list li {
+  font-size: 1.4rem;
+}
+main .details-wrapper .details-list:last-child {
+  margin-left: auto;
+}
+
 .sidebar-left {
   display: flex;
   align-items: center;
@@ -17113,16 +17124,10 @@ main button {
   flex-direction: column;
   gap: 1rem;
 }
-
-.details-wrapper {
+.sidebar-right .recom-texts {
   display: flex;
-  width: 100%;
-}
-.details-wrapper .details-list li {
-  font-size: 1.4rem;
-}
-.details-wrapper .details-list:last-child {
-  margin-left: auto;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .navbar {
