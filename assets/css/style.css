@@ -17143,6 +17143,9 @@ main .details-wrapper .details-list:last-child {
     flex-direction: column !important;
     gap: 3rem !important;
   }
+  main h1 {
+    padding-right: 0 !important;
+  }
   main .details-wrapper {
     flex-direction: column !important;
   }

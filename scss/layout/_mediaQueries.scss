@@ -21,6 +21,11 @@
   }
 
   main {
+
+    h1 {
+      padding-right: 0 !important;
+    }
+
     .details-wrapper {
       flex-direction: column !important;
 
