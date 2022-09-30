@@ -13860,23 +13860,8 @@ button {
   box-shadow: none;
 }
 
-.section-navigation,
-.section-main {
-  padding: 0.5rem 2rem;
-}
-
-section {
-  background-color: #E5E5E5;
-}
-
-hr {
-  border: 1px solid #E5E5E5;
-  width: 95%;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
+.font-weight-normal {
+  font-weight: normal !important;
 }
 
 .card, main, .recom-card, .pstat-card {
@@ -17142,6 +17127,32 @@ main .details-wrapper .details-list:last-child {
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 768px) {
+  .main-row {
+    gap: 3rem !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .navbar {
+    padding: 1rem 0rem;
+  }
+  .nav-pills {
+    flex-direction: column !important;
+  }
+  .recom-card {
+    flex-direction: column !important;
+    gap: 3rem !important;
+  }
+  main .details-wrapper {
+    flex-direction: column !important;
+  }
+  main .details-wrapper .details-list:last-child {
+    margin-left: 0;
+  }
+  main .research-top .topics .topics-list {
+    gap: 2.6rem !important;
+  }
+}
 .card, .recom-card, .pstat-card {
   display: flex;
   align-items: center;
@@ -17308,8 +17319,23 @@ main .details-wrapper .details-list:last-child {
   color: #828282;
 }
 
-.font-weight-normal {
-  font-weight: normal !important;
+.section-navigation,
+.section-main {
+  padding: 0.5rem 2rem;
+}
+
+section {
+  background-color: #E5E5E5;
+}
+
+hr {
+  border: 1px solid #E5E5E5;
+  width: 95%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 * {

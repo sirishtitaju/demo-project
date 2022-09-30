@@ -1,14 +1,15 @@
 @use './custom';
-@use './pages/index';
+@use './abstracts/utility';
 @use './layout/main';
 @use './layout/sidebar-left';
 @use './layout/sidebar-right';
 @use './layout/navigation';
+@use './layout/mediaQueries';
 @use './components/card';
 @use './components/buttons';
 @use './components/pills';
 @use './components/timeline';
-@use './abstracts/utility';
+@use './pages/index';
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');

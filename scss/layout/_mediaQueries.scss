@@ -1,0 +1,38 @@
+//tablet
+@media screen and (max-width:768px) {
+  .main-row {
+    gap: 3rem !important;
+  }
+}
+
+//mobile-lg
+@media screen and (max-width:525px) {
+  .navbar {
+    padding: 1rem 0rem;
+  }
+
+  .nav-pills {
+    flex-direction: column !important;
+  }
+
+  .recom-card {
+    flex-direction: column !important;
+    gap: 3rem !important;
+  }
+
+  main {
+    .details-wrapper {
+      flex-direction: column !important;
+
+      .details-list:last-child {
+        margin-left: 0;
+      }
+    }
+
+    .research-top .topics .topics-list {
+      gap: 2.6rem !important;
+    }
+  }
+
+
+}
